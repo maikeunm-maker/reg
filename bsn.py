@@ -1,4 +1,9 @@
-import os
+import os,platform
 os.system('git pull')
-os.system('xdg-open https://youtube.com/@technicalbilal7608')
-import bili
+
+bsn=platform.architecture()[0]
+if bsn=="32bit":
+    print('Sorry Update Your Phone...')
+elif bsn=="64bit":
+    __import__("bili")
+    print('CLOSE ... BYEE')
